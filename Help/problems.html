@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML lang="ja">
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=SHIFT_JIS">
+<META name="author" content="Susho">
+<LINK rel="stylesheet" href="./simple.css" type="text/css">
+<TITLE lang="ja">DbsSusho 取扱説明書</TITLE>
+</HEAD>
+
+</BODY>
+
+<P> <A href="./index.html">トップページ</A>へ </P>
+<HR>
+
+<H1>問題点など</H1>
+
+<H2>問題点</H2>
+<UL>
+  <LI>プレビューボタンを押した後の処理中にパラメーターを変更すると予期しない結果を引き起こすことがあります。これはプラグイン側ではどうしようもない事なので、とりあえず注意して下さい。</LI>
+  <LI>ちょっとイレギュラーなフォントの取得方法を行っているので、異なったバージョンのDibasでの動作は予測できません。具体的にはペンとして設定用ダイアログを開いたとき以下のようにしてフォントを取得しています。
+     <PRE>SendMessage(GetParent(hwnd), DBSM_GET_TOOLFONT, 0, 0L);</PRE>
+  </LI>
+</UL>
+
+</BODY>
+
+</HTML>
