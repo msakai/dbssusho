@@ -1,0 +1,61 @@
+#include "DIBASRES.PAS"
+
+//フィルタ用の文字列
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+{
+  PLUGIN_DESCRIPTION, "Plug-in Filters for Dibas32v1.04 writen by M.Sakai"
+
+  ID_MARKERPAINT,     "マーカーで塗り潰し"
+  ID_BMPPAINT,        "ビットマップで塗り潰し"
+  ID_AVERAGEPAINT,    "平均色で塗り潰し"
+  ID_PATTERNPAINT,    "パターンで塗り潰し"
+  ID_GRADATIONPAINT,  "グラデーションで塗り潰し"
+
+  ID_GRAYSCALE,       "グレースケール化"
+  ID_POSTERIZE,       "ポスタリゼーション"
+  ID_SOLARIZATION,    "ソラリゼーション"
+  ID_COPYCHANNEL,     "チャンネル複写／交換"
+  ID_DUALTONE,        "複色効果"
+  ID_MONOTONE,        "単色効果"
+  ID_RGBSHIFT,        "RGBシフト"
+
+  ID_DEFFUSION,       "拡散"
+
+  ID_RELIEF,          "レリーフ"
+  ID_DOTPAINT,        "点描"
+  ID_GLASSFILTER,     "ガラス処理"
+
+  ID_WAVE,            "ウェーブ変形"
+  ID_SPIN,            "旋回"
+  ID_BLOWOUT,         "爆発"
+  ID_SPLASH,          "波紋"
+  ID_RECTTOPOLOR,     "極座標"
+  ID_TUNNEL,          "トンネル"
+  ID_LOZENGE,         "菱形"
+  ID_AFFINE,          "アフィン変換"
+  ID_SPHERE,          "球"
+
+  ID_CMYADD,          "加算(CMY)"
+  ID_CMYMULTIPLE,     "乗算(CMY)"
+  ID_AND,             "AND"
+  ID_OR,              "OR"
+
+  ID_RANDOMDITHER,    "白黒(ランダムディザ)"
+}
+
+//ボタン用のビットマップ
+ID_MARKERPAINT    BITMAP "bitmaps/MarkerPaint.bmp"
+ID_BMPPAINT       BITMAP "bitmaps/BMPPaint.bmp"
+ID_GRADATIONPAINT BITMAP "bitmaps/GradPaint.bmp"
+
+ID_GRAYSCALE      BITMAP "bitmaps/GrayScale.bmp"
+ID_POSTERIZE      BITMAP "bitmaps/Poster.bmp"
+ID_SOLARIZATION   BITMAP "bitmaps/Solarization.bmp"
+ID_COPYCHANNEL    BITMAP "bitmaps/Channel.bmp"
+ID_RGBSHIFT       BITMAP "bitmaps/RGBShift.bmp"
+ID_MONOTONE       BITMAP "bitmaps/MonoTone.bmp"
+ID_DUALTONE       BITMAP "bitmaps/DualTone.bmp"
+
+ID_DEFFUSION      BITMAP "bitmaps/Diffusion.bmp"
+
+
